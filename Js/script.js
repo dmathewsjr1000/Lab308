@@ -70,26 +70,27 @@ console.log('25 is still Max number');
 const totalDistant = 1500;
 const totalBudget = 175;
 const avgGas = 3;
-const planAgas = totalDistant / 30;
-const planBgas = totalDistant / 28;
-const planCgas = totalDistant / 23;
-const planAbudget = planAgas * avgGas;
-const planBbudget = planBgas * avgGas;
-const planCbudget = planCgas * avgGas;
-const totalTime = totalDistant / 60;
-const budgetAsavings = totalBudget - planAbudget;
-const budgetBsavings = totalBudget - planBbudget;
+let planAgas = totalDistant / 30;
+let planBgas = totalDistant / 28;
+let planCgas = totalDistant / 23;
+let planAbudget = planAgas * avgGas;
+let planBbudget = planBgas * avgGas;
+let planCbudget = planCgas * avgGas;
+let totalTime = totalDistant / 60;
+let budgetAsavings = totalBudget - planAbudget;
+let budgetBsavings = totalBudget - planBbudget;
+
 
 console.log('How many gallons of fuel will you need for the entire trip? ' + 
-'\nIf Plan A then the gallon is: ' + planAgas + 
-'\nIf Plan B then the gallon is: ' + planBgas + 
-'\nIf Plan C then the gallon is: ' + planCgas);
+'\nIf Plan A then the gallon is: ' + planAgas.toFixed(2) + 
+'\nIf Plan B then the gallon is: ' + planBgas.toFixed(2) + 
+'\nIf Plan C then the gallon is: ' + planCgas.toFixed(2));
 
 console.log('Will your budget be enough to cover the fuel expense? ' + 
-'\nThe budget is: ' + totalBudget + 
-'\nIf Plan A then the budget is: ' + planAbudget +
-'\nIf Plan B then the budget is: ' + planBbudget +
-'\nIf Plan C then the budget is: ' + planCbudget +
+'\nThe budget is: ' + totalBudget.toFixed(2) + 
+'\nIf Plan A then the budget is: ' + planAbudget.toFixed(2) +
+'\nIf Plan B then the budget is: ' + planBbudget.toFixed(2) +
+'\nIf Plan C then the budget is: ' + planCbudget.toFixed(2) +
 '\nBase on budget two out of three plans will be enough.');
 
 console.log('How long will the trip take in hours? ' + 
@@ -97,6 +98,6 @@ console.log('How long will the trip take in hours? ' +
 
 console.log('After comparing all 3 of the miles per hours traveled from 75, 60, and 55: ' + 
 '\nThe 75mph way will not be a option because it out budget.' + 
-'\nThe 60mph way will be a option because it is budget and give you a savings of: ' + budgetAsavings +
-'\nThe 55mph way will be a option because it is budget and give you a savings of: ' + budgetBsavings);
+'\nThe 60mph way will be a option because it is budget and give you a savings of: ' + budgetAsavings.toFixed(2) +
+'\nThe 55mph way will be a option because it is budget and give you a savings of: ' + budgetBsavings.toFixed(2));
 
