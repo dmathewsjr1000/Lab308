@@ -53,13 +53,13 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
 //   Subtracting Numbers
   const isSub = n1 - n2;
-  console.log('The subtracted number ' + isSub);
+  console.log('The subtracted number: ' + isSub);
 //   Multiplying Numbers
   const isMul = isSub * n3;
-  console.log('The multiplied number ' + isMul);
+  console.log('The multiplied number: ' + isMul);
 //   Getting the Remainder
   const isRemain = isMul % n4;
-  console.log('The remainder number ' + isRemain);
+  console.log('The remainder number: ' + isRemain);
 
 //   Testing that 25 is the Max number
 const isMax25 = console.log( n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25);
@@ -98,3 +98,4 @@ console.log('After comparing all 3 of the miles per hours traveled from 75, 60, 
 '\nThe 75mph way will not be a option because it out budget.' + 
 '\nThe 60mph way will be a option because it is budget and give you a savings of: ' + budgetAsavings +
 '\nThe 55mph way will be a option because it is budget and give you a savings of: ' + budgetBsavings);
+
