@@ -33,7 +33,7 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 
 // Finally, log the results.
-console.log(isValid);
+  // console.log(isValid);
 
 // Here's another example of how this COULD be done,
 // but it SHOULD NOT be done this way. As programmers,
@@ -45,9 +45,10 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
 
 
-  const isDiv5 = (n1 % 5) && (n2 % 5) && (n3 % 5) && (n4 % 5) == 0;
+  const isDiv5 = (n1 % 5) == 0 + (n2 % 5) == 0 + (n3 % 5) ==  0 + (n4 % 5)== 0 == 0;
+  console.log(isDiv5);
   console.log('These numbers are multiple of 5');
-
+  
   const isGreat = console.log((n1 > n4));
   console.log('The first number is greater than last number');
 
